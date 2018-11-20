@@ -1,0 +1,17 @@
+15:18:44 socket(PF_INET, SOCK_RAW, IPPROTO_ICMP) = 4 <0.000017>
+15:18:44 socket(PF_INET, SOCK_DGRAM, IPPROTO_IP) = 5 <0.000010>
+15:18:44 connect(5, {sa_family=AF_INET, sin_port=htons(1025), sin_addr=inet_addr("49.7.36.125")}, 16) = 0 <0.000019>
+15:18:44 getsockname(5, {sa_family=AF_INET, sin_port=htons(44323), sin_addr=inet_addr("139.129.23.162")}, [16]) = 0 <0.000005>
+15:18:44 setsockopt(4, SOL_RAW, ICMP_FILTER, ~(ICMP_ECHOREPLY|ICMP_DEST_UNREACH|ICMP_SOURCE_QUENCH|ICMP_REDIRECT|ICMP_TIME_EXCEEDED|ICMP_PARAMETERPROB), 4) = 0 <0.000006>
+15:18:44 setsockopt(4, SOL_IP, IP_RECVERR, [1], 4) = 0 <0.000006>
+15:18:44 setsockopt(4, SOL_SOCKET, SO_SNDBUF, [324], 4) = 0 <0.000006>
+15:18:44 setsockopt(4, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0 <0.000005>
+15:18:44 getsockopt(4, SOL_SOCKET, SO_RCVBUF, [131072], [4]) = 0 <0.000006>
+15:18:44 setsockopt(4, SOL_SOCKET, SO_TIMESTAMP, [1], 4) = 0 <0.000007>
+15:18:44 setsockopt(4, SOL_SOCKET, SO_SNDTIMEO, "\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0 <0.000006>
+15:18:44 setsockopt(4, SOL_SOCKET, SO_RCVTIMEO, "\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0 <0.000005>
+15:18:44 sendmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("49.7.36.125")}, msg_iov(1)=[{"\10\0+\17e\207\0\1To\356[\0\0\0\0b\312\3\0\0\0\0\0\20\21\22\23\24\25\26\27"..., 64}], msg_controllen=0, msg_flags=0}, 0) = 64 <0.000031>
+15:18:44 recvmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("49.7.36.125")}, msg_iov(1)=[{"E\24\0T\351\217\0\0006\1\242^1\7$}\213\201\27\242\0\0003\17e\207\0\1To\356["..., 192}], msg_controllen=32, {cmsg_len=32, cmsg_level=SOL_SOCKET, cmsg_type=0x1d /* SCM_??? */, ...}, msg_flags=0}, 0) = 84 <0.015578>
+15:18:45 sendmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("49.7.36.125")}, msg_iov(1)=[{"\10\0\33\7e\207\0\2Uo\356[\0\0\0\0q\321\3\0\0\0\0\0\20\21\22\23\24\25\26\27"..., 64}], msg_controllen=0, msg_flags=0}, MSG_CONFIRM) = 64 <0.000053>
+15:18:45 recvmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("49.7.36.125")}, msg_iov(1)=[{"E\24\0T\351\220\0\0006\1\242]1\7$}\213\201\27\242\0\0#\7e\207\0\2Uo\356["..., 192}], msg_controllen=32, {cmsg_len=32, cmsg_level=SOL_SOCKET, cmsg_type=0x1d /* SCM_??? */, ...}, msg_flags=0}, 0) = 84 <0.015605>
+15:18:45 +++ exited with 0 +++

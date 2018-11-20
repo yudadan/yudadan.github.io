@@ -1,0 +1,27 @@
+15:27:07 socket(PF_INET, SOCK_RAW, IPPROTO_ICMP) = 4 <0.000017>
+15:27:07 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5 <0.000011>
+15:27:07 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = 0 <0.000044>
+15:27:07 sendto(5, "\2\0\0\0\r\0\0\0\6\0\0\0hosts\0", 18, MSG_NOSIGNAL, NULL, 0) = 18 <0.000063>
+15:27:07 recvmsg(5, {msg_name(0)=NULL, msg_iov(2)=[{"hosts\0", 6}, {"\310O\3\0\0\0\0\0", 8}], msg_controllen=24, {cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, {6}}, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 14 <0.000007>
+15:27:07 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5 <0.000007>
+15:27:07 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = 0 <0.000019>
+15:27:07 sendto(5, "\2\0\0\0\4\0\0\0\16\0\0\0www.baidu.com\0", 26, MSG_NOSIGNAL, NULL, 0) = 26 <0.000150>
+15:27:07 socket(PF_INET, SOCK_DGRAM, IPPROTO_IP) = 5 <0.000008>
+15:27:07 connect(5, {sa_family=AF_INET, sin_port=htons(1025), sin_addr=inet_addr("115.239.211.112")}, 16) = 0 <0.000010>
+15:27:07 getsockname(5, {sa_family=AF_INET, sin_port=htons(44473), sin_addr=inet_addr("139.129.23.162")}, [16]) = 0 <0.000005>
+15:27:07 setsockopt(4, SOL_RAW, ICMP_FILTER, ~(ICMP_ECHOREPLY|ICMP_DEST_UNREACH|ICMP_SOURCE_QUENCH|ICMP_REDIRECT|ICMP_TIME_EXCEEDED|ICMP_PARAMETERPROB), 4) = 0 <0.000006>
+15:27:07 setsockopt(4, SOL_IP, IP_RECVERR, [1], 4) = 0 <0.000005>
+15:27:07 setsockopt(4, SOL_SOCKET, SO_SNDBUF, [324], 4) = 0 <0.000005>
+15:27:07 setsockopt(4, SOL_SOCKET, SO_RCVBUF, [65536], 4) = 0 <0.000005>
+15:27:07 getsockopt(4, SOL_SOCKET, SO_RCVBUF, [131072], [4]) = 0 <0.000005>
+15:27:07 setsockopt(4, SOL_SOCKET, SO_TIMESTAMP, [1], 4) = 0 <0.000006>
+15:27:07 setsockopt(4, SOL_SOCKET, SO_SNDTIMEO, "\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0 <0.000006>
+15:27:07 setsockopt(4, SOL_SOCKET, SO_RCVTIMEO, "\1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0", 16) = 0 <0.000005>
+15:27:07 sendmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("115.239.211.112")}, msg_iov(1)=[{"\10\0\275\225e\351\0\1Kq\356[\0\0\0\0\332\337\1\0\0\0\0\0\20\21\22\23\24\25\26\27"..., 64}], msg_controllen=0, msg_flags=0}, 0) = 64 <0.000024>
+15:27:07 recvmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("115.239.211.112")}, msg_iov(1)=[{"E\24\0T\271\277@\0006\1\240Rs\357\323p\213\201\27\242\0\0\305\225e\351\0\1Kq\356["..., 192}], msg_controllen=32, {cmsg_len=32, cmsg_level=SOL_SOCKET, cmsg_type=0x1d /* SCM_??? */, ...}, msg_flags=0}, 0) = 84 <0.027695>
+15:27:07 socket(PF_LOCAL, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 5 <0.000008>
+15:27:07 connect(5, {sa_family=AF_LOCAL, sun_path="/var/run/nscd/socket"}, 110) = 0 <0.000023>
+15:27:07 sendto(5, "\2\0\0\0\6\0\0\0\4\0\0\0s\357\323p", 16, MSG_NOSIGNAL, NULL, 0) = 16 <0.000120>
+15:27:08 sendmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("115.239.211.112")}, msg_iov(1)=[{"\10\0\211\217e\351\0\2Lq\356[\0\0\0\0\r\345\1\0\0\0\0\0\20\21\22\23\24\25\26\27"..., 64}], msg_controllen=0, msg_flags=0}, MSG_CONFIRM) = 64 <0.000060>
+15:27:08 recvmsg(4, {msg_name(16)={sa_family=AF_INET, sin_port=htons(0), sin_addr=inet_addr("115.239.211.112")}, msg_iov(1)=[{"E\24\0T\272\211@\0006\1\237\210s\357\323p\213\201\27\242\0\0\221\217e\351\0\2Lq\356["..., 192}], msg_controllen=32, {cmsg_len=32, cmsg_level=SOL_SOCKET, cmsg_type=0x1d /* SCM_??? */, ...}, msg_flags=0}, 0) = 84 <0.027738>
+15:27:08 +++ exited with 0 +++
